@@ -4059,10 +4059,14 @@
         }
         function initSliders() {
             if (document.querySelector(".hero__slider")) new core(".hero__slider", {
-                modules: [ Pagination, EffectFade ],
+                modules: [ Pagination, EffectFade, Autoplay ],
                 slidesPerView: 1,
                 speed: 800,
                 effect: "fade",
+                autoplay: {
+                    delay: 3e3,
+                    disableOnInteraction: false
+                },
                 pagination: {
                     el: ".pagination-hero__body",
                     clickable: true

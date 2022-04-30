@@ -187,6 +187,7 @@ body {
 }
 
 .slider-arrows {
+  pointer-events: none;
   position: absolute;
   width: calc(100% + 11.25rem);
   left: -5.625rem;
@@ -203,6 +204,7 @@ body {
 }
 
 .slider-arrow {
+  pointer-events: auto;
   cursor: pointer;
 }
 
@@ -221,6 +223,7 @@ body {
 
 .header {
   border-bottom: 1px solid #d9e0e7;
+  background-color: #fff;
 }
 
 .header__container {
@@ -234,7 +237,6 @@ body {
      -moz-column-gap: 1.5625rem;
           column-gap: 1.5625rem;
   min-height: 10.5rem;
-  background-color: #fff;
 }
 
 .header__logo {
@@ -654,6 +656,11 @@ body {
   background-color: #fff;
   -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  -webkit-transition: -webkit-box-shadow 0.3s ease 0s;
+  transition: -webkit-box-shadow 0.3s ease 0s;
+  -o-transition: box-shadow 0.3s ease 0s;
+  transition: box-shadow 0.3s ease 0s;
+  transition: box-shadow 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
 }
 
 .item-equipment__image img {
@@ -787,10 +794,16 @@ body {
 }
 
 .projects-slider {
+  margin: -0.75rem -0.75rem;
   position: relative;
 }
 
+.projects-slider__body {
+  padding: 0.75rem;
+}
+
 .item-projects {
+  display: block;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -804,6 +817,11 @@ body {
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   padding: 1.25rem 1.25rem 2.5rem 1.25rem;
   text-align: center;
+  -webkit-transition: -webkit-box-shadow 0.3s ease 0s;
+  transition: -webkit-box-shadow 0.3s ease 0s;
+  -o-transition: box-shadow 0.3s ease 0s;
+  transition: box-shadow 0.3s ease 0s;
+  transition: box-shadow 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
 }
 
 .item-projects__image-ibg {
@@ -934,7 +952,7 @@ body {
 
   .projects-slider__body {
     max-width: none;
-    margin-right: -0.9375rem;
+    margin-right: -1.6875rem;
   }
 
   .item-projects__title {
@@ -967,6 +985,11 @@ body {
   .projects-slider__body {
     max-width: calc(100% - 5rem);
     margin: 0 auto;
+  }
+
+  .projects-slider .slider-arrows {
+    width: calc(100% - 1.875rem);
+    left: 0.9375rem;
   }
 }
 
@@ -1276,6 +1299,16 @@ body {
 
   .info-footer__item a:hover {
     opacity: 0.8;
+  }
+
+  .item-equipment:hover {
+    -webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .item-projects:hover {
+    -webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
   }
 }
 
