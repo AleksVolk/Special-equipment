@@ -942,8 +942,8 @@ body {
 }
 
   .about-slider__body {
-    max-width: none;
-    margin-right: -0.9375rem;
+    max-width: none !important;
+    margin-right: -0.9375rem !important;
   }
 
   .projects__paginarion {
@@ -951,8 +951,8 @@ body {
   }
 
   .projects-slider__body {
-    max-width: none;
-    margin-right: -1.6875rem;
+    max-width: none !important;
+    margin-right: -1.6875rem !important;
   }
 
   .item-projects__title {
@@ -966,8 +966,8 @@ body {
   }
 
   .equipment__body {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr !important;
+    grid-template-columns: 1fr !important;
   }
 }
 
