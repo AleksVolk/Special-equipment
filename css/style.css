@@ -100,6 +100,7 @@ h6 {
 }
 
 body {
+  -webkit-tap-highlight-color: transparent;
   background-color: #f2f6fa;
 }
 
@@ -341,6 +342,10 @@ body {
 
 .catalog-menu__title:not(:last-child) {
   margin-bottom: 1.5rem;
+}
+
+.catalog-menu__item {
+  padding-right: 3.75rem;
 }
 
 .catalog-menu__item:not(:last-child) {
